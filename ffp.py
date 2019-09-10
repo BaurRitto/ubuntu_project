@@ -21,11 +21,11 @@ if __name__ == "__main__":
 @app.route('/{}'.format(bot_token), methods=['POST'])
 def respond():
     # retrieve the message in JSON and then transform it to Telegram object
-    update = telegram.Update.de_json(request.get_json(force=True), bot)
+	update = telegram.Update.de_json(request.get_json(force=True), bot)
 	chat_id = update.message.chat.id
 	msg_id = update.message.message_id
 	text = update.message.text.encode('utf-8').decode()
-    print("got text message :", text)
+	print("got text message :", text)
 	bot.sendMessage(chat_id=chat_id, text=text, reply_to_message_id=msg_id)
 	return 'ok'
 
@@ -36,4 +36,4 @@ def set_webhook():
         return "webhook setup ok"
     else:
         return "webhook setup failed"
->>>>>>> 477fbb31707e7059e1bbe16dd54e53d04ea3bd74
+
