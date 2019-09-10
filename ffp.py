@@ -5,7 +5,7 @@ import telegram
 
 bot_token = "813851707:AAF7OR0gukW38DKLYrBbjmJyiB_SwYg2FJ4"
 bot_user_name = "ffp_project_bot"
-URL = "104.248.4.159"
+URL = "104.248.4.159:5000"
 
 bot = telegram.Bot(token=bot_token)
 
