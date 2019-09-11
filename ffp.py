@@ -3,7 +3,7 @@ import telegram
 #from telebot.credentials import bot_token, bot_user_name,URL
 #from telebot.mastermind import get_response
 
-bot_token = "813851707:AAF7OR0gukW38DKLYrBbjmJyiB_SwYg2FJ4"
+bot_token = ""
 bot_user_name = "ffp_project_bot"
 URL = "http://104.248.4.159:5000"
 
