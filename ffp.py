@@ -5,7 +5,7 @@ import telegram
 
 bot_token = ""
 bot_user_name = "ffp_project_bot"
-URL = "http://104.248.4.159:5000"
+URL = ""
 
 bot = telegram.Bot(token=bot_token)
 
@@ -15,7 +15,7 @@ app = Flask(__name__)
 def hello():
 	return render_template('home.html')
 if __name__ == "__main__":
-	app.run(host= "104.248.4.159",debug=True) 
+	app.run(host= "",debug=True) 
  
 
 @app.route('/{}'.format(bot_token), methods=['POST'])
